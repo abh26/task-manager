@@ -29,7 +29,7 @@ func TestGetUserByUsername(t *testing.T) {
 	err := services.GetUserByUsername(&retrievedUser, user.Username)
 
 	assert.NoError(t, err)                                 // Expect no error when retrieving
-	assert.Equal(t, user.Username, retrievedUser.Username) // Expect the retrieved username to match
+	assert.Equal(t, user.Username, retrievedUser.Username) // Expect the  retrieved username to match
 }
 
 func TestGetUserByNonExistentUsername(t *testing.T) {

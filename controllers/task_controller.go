@@ -149,7 +149,7 @@ func MarkTasksAsDone(w http.ResponseWriter, r *http.Request) {
 }
 
 func DeleteTask(w http.ResponseWriter, r *http.Request) {
-	// Extract URL variables
+	// Extract URL  variables
 	vars := mux.Vars(r)
 	taskID := vars["id"] // Get the "id" from the URL variables
 	TaskIDConverted,_:=strconv.Atoi(taskID)

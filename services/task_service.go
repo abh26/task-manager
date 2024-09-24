@@ -11,7 +11,7 @@ func CreateTask(task *models.Task) error {
 	return database.DB.Create(task).Error // Return any error that occurs during the creation
 }
 
-// GetTasksByUserID fetches tasks for a specific user with pagination and sorting
+// GetTasksByUserID fetches tasks for a specific user with  pagination and sorting
 func GetTasksByUserID(userID uint, page, pageSize int, sortBy, sortOrder string) ([]models.Task, int64, error) {
 	var tasks []models.Task
 	var totalTasks int64

@@ -53,5 +53,5 @@ func main() {
 
 	// Log a message indicating that the server has started and listen on port 3000 for incoming HTTP requests.
 	log.Println("server started")
-	log.Fatal(http.ListenAndServe(":3000", r)) // Start the server on port 3000 and bind the router.
+	log.Fatal(http.ListenAndServe(":3000", r)) // Start the server on port  3000 and bind the router.
 }

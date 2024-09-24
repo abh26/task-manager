@@ -11,7 +11,7 @@ import (
 )
 
 func RegisterUser(w http.ResponseWriter, r *http.Request) {
-    // Decode the request body to get the user data
+    // Decode the request body  to get the user data
     var user models.User
     if err := json.NewDecoder(r.Body).Decode(&user); err != nil {
         http.Error(w, "Invalid input", http.StatusBadRequest)

@@ -11,7 +11,7 @@ import (
 
 func AuthMiddleware(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		// Retrieve the Authorization header
+		// Retrieve the Authorization  header
 		tokenString := r.Header.Get("Authorization")
 		if tokenString == "" {
 			http.Error(w, "Unauthorized", http.StatusUnauthorized) // No token provided

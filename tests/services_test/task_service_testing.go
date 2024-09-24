@@ -73,7 +73,7 @@ func TestUpdateTaskStatus(t *testing.T) {
 	// Verify the status is updated
 	var updatedTask models.Task
 	err = database.DB.First(&updatedTask, task.ID).Error
-	assert.NoError(t, err)                      // Expect no error
+	assert.NoError(t, err)                      // Expect no  error
 	assert.Equal(t, "done", updatedTask.Status) // Expect status to be "done"
 
 	// Test invalid status

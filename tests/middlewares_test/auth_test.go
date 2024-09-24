@@ -16,7 +16,7 @@ func setupRouterWithAuth() *http.ServeMux {
 	mux := http.NewServeMux()
 	
 	mux.Handle("/protected", middlewares.AuthMiddleware(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		// Extract userID from context and write it to the response
+		// Extract userID  from context and write it to the response
 		userID := r.Context().Value("userID").(uint)
 		w.Write([]byte("User ID: " + string(userID)))
 	})))

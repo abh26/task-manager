@@ -28,7 +28,7 @@ func middlewareTest(next http.Handler) http.Handler {
 }
 
 // TestCreateTask tests the CreateTask controller.
-// It sends a POST request with a sample task and checks if the response status is 200 OK.
+// It sends a POST request with a sample task and checks if the response  status is 200 OK.
 func TestCreateTask(t *testing.T) {
 	// Setup router and define the route
 	r := setupRouter()

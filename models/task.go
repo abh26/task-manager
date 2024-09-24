@@ -12,7 +12,7 @@ type Task struct {
 }
 
 type GettaskRequest struct {
-    Page      int    `json:"page"`      // Page number for pagination
+    Page      int    `json:"page"`      // Page number for  pagination
     PageSize  int    `json:"pageSize"`  // Number of tasks per page
     SortBy    string `json:"sortBy"`    // Field to sort by (e.g., status, createdAt)
     SortOrder string `json:"sortOrder"` // Order to sort (asc or desc)

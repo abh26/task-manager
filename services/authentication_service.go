@@ -7,7 +7,7 @@ import (
 	"github.com/golang-jwt/jwt/v4"
 )
 
-var JwtKey = []byte("secret_key") // Secret key used for signing the JWT
+var JwtKey = []byte("secret_key") // Secret key  used for signing the JWT
 
 // GenerateJWT creates a new JWT for the specified user
 func GenerateJWT(user models.User) (string, error) {

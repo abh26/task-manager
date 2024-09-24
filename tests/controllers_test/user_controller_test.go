@@ -13,7 +13,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/assert"
 )
-
+//test cases for user controller
 func setupuserRouter() *mux.Router {
 	r := mux.NewRouter()
 	r.HandleFunc("/register", controllers.RegisterUser).Methods("POST")

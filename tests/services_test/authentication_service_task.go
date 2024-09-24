@@ -11,7 +11,7 @@ import (
 )
 
 func TestGenerateJWT(t *testing.T) {
-	// Create a dummy user for testing
+	// Create a dummy user for  testing
 	user := models.User{Username: "abhishek", Password: "abh262000"}
 
 	// Generate JWT for the mock user
