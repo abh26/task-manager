@@ -15,7 +15,7 @@ func main() {
 	// This will set up the necessary database configurations and open a connection to the database.
 	database.InitDB()
 
-	// A new Gorilla Mux router to handle incoming HTTP requests.
+	// A Gorilla Mux router to handle incoming HTTP requests.
 	r := mux.NewRouter()
 
 	// Public routes: These do not require authentication
